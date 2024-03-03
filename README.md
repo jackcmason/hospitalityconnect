@@ -10,7 +10,6 @@ sudo apt install php php-cli php-common php-mbstring php-xml php-zip curl php-cu
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
-
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 php -r "unlink('composer-setup.php');"
@@ -30,12 +29,13 @@ npm run dev
 In the `backend/` directory:
 ```
 cp .env.example .env
-php artisan key:generate
 composer install
+php artisan key:generate
 sudo chmod -R 777 storage bootstrap/cache
 php artisan migrate
 php artisan serve
 ```
+The `php artisan migrate` command will prompt to create a new SQLite database, select yes
 # Brief
 ## FrontEnd & Backend
 I chose to develop a separate frontend & backend for the project, as I thought that this would allow me to develop the application faster
