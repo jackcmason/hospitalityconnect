@@ -25,7 +25,7 @@ In the `frontend/` directory:
 npm install
 npm run dev
 ```
-Then you will to navigate to http://localhost:5173/ to access the frontend
+Then you will want to navigate to http://localhost:5173/ to access the frontend
 ## Backend
 In the `backend/` directory:
 ```
